@@ -33,7 +33,7 @@ async fn get_server_ip() {
 }
 
 /// Example GET request to PISTE API
-/// curl -is -H 'Authorization: Bearer uhp0K9ZocT95NY6zocjtmEs1MKH660hwllBMvVIQYXliQwlOTRhwZs' -X GET https://sandbox-api.piste.gouv.fr/dila/legifrance/lf-engine-app/consult/ping
+/// curl -is -H 'Authorization: Bearer xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx' -X GET https://sandbox-api.piste.gouv.fr/dila/legifrance/lf-engine-app/consult/ping
 #[get("/ping_public")]
 pub async fn ping_public_api()->String {
     println!("send ping to LégiFrance with token:{}",TOKEN_INFO.get().unwrap().access_token);
@@ -47,7 +47,7 @@ let res = HTTP_CLIENT.get("https://sandbox-api.piste.gouv.fr/dila/legifrance/lf-
 }
 
 /// Example POST request to PISTE API
-/// curl -is -H 'Authorization: Bearer uhp0K9ZocT95NY6zocjtmEs1MKH660hwllBMvVIQYXliQwlOTRhwZs'      
+/// curl -is -H 'Authorization: Bearer xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 /// -H 'accept: application/json'   
 /// -H 'Content-Type: application/json'     
 /// -d '{ "years": [ 2016, 2017 ] }'  -X POST https://sandbox-api.piste.gouv.fr/dila/legifrance/lf-engine-app/list/docsAdmins
